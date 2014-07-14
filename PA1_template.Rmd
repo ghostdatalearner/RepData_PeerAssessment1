@@ -4,7 +4,6 @@ This is the .rmd file for JHU's Data Science specialization 'Reproducible Resear
 * Author: Ghostdatalearner
 * Date: July 2014
 
-
 ## Loading and preprocessing the data
 
 
@@ -13,7 +12,6 @@ raw_data <- read.csv('activity.csv')
 # Get the dates when data where recorded
 dates_list <- unique(raw_data$date)
 ```
-
 
 
 ## What is mean total number of steps taken per day?
@@ -76,7 +74,6 @@ There were `r number_of_nas` records with missing steps values.
 * Steps daily median (NAs replaced): `r median_steps`
 
 The effect of replacement is sharp. As NAs are changed by the mean value of the interval, they go towards the overall mean, so the count of cases around it increases. The mean remains the same than when we strip NAs. The median converges towards the mean because of the same effect.
-
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
